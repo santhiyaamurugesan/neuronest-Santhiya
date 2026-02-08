@@ -1,0 +1,21 @@
+{
+    "name": "jwell-shop",
+    "version": "1.0.0",
+    "description": "Jewellery E-Commerce Project",
+    "main": "backend/server.js",
+    "scripts": {
+        "start": "node backend/server.js",
+        "server": "nodemon backend/server.js",
+        "client": "npm run dev --prefix frontend",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "data:import": "cd backend && node seeder.js",
+        "data:destroy": "cd backend && node seeder.js -d"
+    },
+    "author": "SanthiyaMurugesan",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^7.6.0",
+        "nodemon": "^2.0.20"
+    },
+    "devDependencies": {}
+}

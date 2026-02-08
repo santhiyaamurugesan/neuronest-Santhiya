@@ -1,0 +1,12 @@
+/* Clear default Vite styles that break layout */
+#root {
+  max-width: 100%;
+  padding: 0;
+  text-align: left;
+  margin: 0;
+}
+
+.main-container {
+  min-height: 80vh;
+  padding: 2rem 0;
+}
